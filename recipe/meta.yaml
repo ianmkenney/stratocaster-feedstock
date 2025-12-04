@@ -1,5 +1,5 @@
 {% set name = "stratocaster" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/OpenFreeEnergy/stratocaster/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b1e251878d27c29b7e9786497f403060e70cacc030ee42dac7889ee24c49ccaf
+  sha256: ea233a1b9e566d3183c138000ea54654c3a5e2b05e8eea63e156242f722e2a79
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 0
   noarch: python
 
 requirements:
